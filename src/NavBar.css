@@ -60,6 +60,7 @@
   background-color: var(--secundary);
   z-index: 999;
   display: none;
+  border-top: 2px solid white;
 }
 
 .menu-icon {
