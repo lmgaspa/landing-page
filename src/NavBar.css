@@ -9,16 +9,32 @@
 
 .navbar-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.navbar-center.show-menu {
+  height: auto;
 }
 
 .navbar-center a {
-  margin: 0 10px;
+  margin: 10px;
   color: white;
   text-decoration: none;
   font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-center a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
 .navbar-right button {
@@ -36,8 +52,30 @@
   width: 5vw;
 }
 
-.invisivel {
+.menu-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: var(--secundary);
+  z-index: 999;
   display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.show-menu .menu-dropdown {
+  display: block;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .logo {
@@ -61,7 +99,7 @@
     display: none;
   }
 
-  .invisivel {
+  .menu-icon {
     display: flex;
     font-size: 30px;
     color: white;
@@ -82,7 +120,8 @@
   .navbar-right {
     display: none;
   }
-  .invisivel {
+  
+  .menu-icon {
     display: flex;
     font-size: 30px;
     color: white;
@@ -104,7 +143,7 @@
     display: none;
   }
   
-  .invisivel {
+  .menu-icon {
     display: flex;
     font-size: 30px;
     color: white;
