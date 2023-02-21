@@ -23,7 +23,7 @@
 
 .navbar-center a {
   margin: 10px;
-  color: white;
+  color: var(--textcolor);
   text-decoration: none;
   font-size: 18px;
   display: block;
@@ -46,23 +46,31 @@
   padding: 8px;
   font-size: 16px;
   background-color: var(--principal);
-  color: white;
+  color: var(--textcolor);
   font-weight: 600;
   width: 5vw;
 }
 
-.menu-dropdown {
+.visible {
   position: absolute;
   top: 60px;
   left: 0;
   right: 0;
   background-color: var(--secundary);
   z-index: 999;
-  display: none;
-  border-top: 2px solid white;
+  border-top: 2px solid var(--textcolor);
+  transition: visibility 1s, opacity 1.5s ease;
+  visibility: visible;
+  opacity: 1;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu-icon {
+  color: var(--textcolor);
   display: none;
 }
 
@@ -70,9 +78,9 @@
   display: block;
 }
 
-.menu-dropdown a {
+.visible a {
   display: block;
-  color: white;
+  color: var(--textcolor);
   text-align: center;
   padding: 10px;
   font-size: 18px;
@@ -80,7 +88,7 @@
 }
 
 .logo {
-  color: white;
+  color: var(--textcolor);
   margin-left: 100px;
   font-size: 28px;
 }
@@ -103,7 +111,6 @@
   .menu-icon {
     display: flex;
     font-size: 30px;
-    color: white;
     position: absolute;
     right: 40px;
   }
@@ -125,7 +132,6 @@
   .menu-icon {
     display: flex;
     font-size: 30px;
-    color: white;
     position: absolute;
     right: 40px;
   }
@@ -147,7 +153,6 @@
   .menu-icon {
     display: flex;
     font-size: 30px;
-    color: white;
     position: absolute;
     right: 40px;
   }
