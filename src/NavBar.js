@@ -12,7 +12,8 @@ function NavBar() {
   return (
     <nav className="navbar">
       <h1 className='logo'>LOGO</h1>
-      <div className={"menu-dropdown " + (showMenu ? "visible" : "invisible")}>        <a href="#">Home</a>
+      <div className={"menu-dropdown " + (showMenu ? "visible" : "invisible")}>
+        <a href="#">Home</a>
         <a href="#">Services</a>
         <a href="#">Portfolio</a>
         <a href="#">About us</a>
