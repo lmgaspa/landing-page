@@ -83,7 +83,7 @@
 
 .logo {
   color: var(--textcolor);
-  margin-left: 80px;
+  margin-left: 100px;
   font-size: 28px;
 }
 
@@ -141,5 +141,9 @@
 
   .visible {
     margin-top: 30px;
+  }
+
+  .logo {
+    margin-left: 40px;
   }
 }
