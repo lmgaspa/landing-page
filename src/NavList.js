@@ -13,9 +13,6 @@ export default function NavList() {
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
             <Link to="/company">About Us</Link>
           </li>
           <li>
